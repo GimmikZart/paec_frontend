@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Jumbotron from './sections/Jumbotron.vue'
-import ChiSiamo from './sections/ChiSiamo.vue'
-import Servizi from './sections/Servizi.vue'
-import Contatti from './sections/Contatti.vue'
+import Header from '@/components/Header.vue'
+import Jumbotron from '@/sections/Jumbotron.vue'
+import ChiSiamo from '@/sections/ChiSiamo.vue'
+import Servizi from '@/sections/Servizi.vue'
+import Contatti from '@/sections/Contatti.vue'
 
 
 export default {

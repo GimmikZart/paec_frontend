@@ -1,3 +1,19 @@
 $blue: #15255A;
+$lightBlue: #475FB7;
 $yellow: #FFC319;
 $red: #F23132;
+
+.bc-red {
+    background-color: $red;
+}
+
+.bc-blue {
+    background-color: $blue;
+}
+
+.bc-lightBlue {
+    background-color: $lightBlue;
+}
+.bc-yellow {
+    background-color: $yellow;
+}
