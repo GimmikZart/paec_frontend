@@ -1,40 +1,116 @@
 $darkBlue: #15255A;
 $lightBlue: #475FB7;
-$darkBlue3: #0965B7; //BLU SBAGLIATO
+$blue: #0965B7; //BLU SBAGLIATO
+$blue2: #4876D0;
+$blue3: #C9D5F3;
 
 $yellow: #f2b829;
+$yellow2: #D0CB48;
+$yellow3: #E8F6BD;
+
 
 $red: #F23132;
+$red2: #D09A48;
+$red3: #F3E7C9;
 
 $orange: #FF9D0A;
 $orange2: #FFC062;
 $orange3: #FFDAA4;
 
 $green: #34BE74;
+$green2: #CFF3C9;
 
-.bc-red {
-    background-color: $red;
-}
+
 
 .bc-darkBlue {
     background-color: $darkBlue;
 }
-
-.bc-blue3 {
-    background-color: $darkBlue3;
+.bc-blue {
+    background-color: $blue;
 }
-
 .bc-lightBlue {
     background-color: $lightBlue;
 }
+.bc-blue2 {
+    background-color: $blue2;
+}
+.c-blue2 {
+    color: $blue2;
+}
+.bc-blue3 {
+    background-color: $blue3;
+}
+.c-blue3 {
+    color: $blue3;
+}
+
+
 .bc-yellow {
     background-color: $yellow;
 }
+.c-yellow {
+    color: $yellow;
+}
+.bc-yellow2 {
+    background-color: $yellow2;
+}
+.c-yellow2 {
+    color: $yellow2;
+}
+.bc-yellow3 {
+    background-color: $yellow3;
+}
+.c-yellow3 {
+    color: $yellow3;
+}
+
+
+
+
+.bc-red {
+    background-color: $red;
+}
+.bc-red2 {
+    background-color: $red2;
+}
+.c-red2 {
+    color: $red2;
+}
+.bc-red3 {
+    background-color: $red3;
+}
+.c-red3 {
+    color: $red3;
+}
+
 
 .bc-orange {
     background-color: $orange;
 }
+.bc-orange2 {
+    background-color: $orange2;
+}
+.c-orange2 {
+    color: $orange2;
+}
+.bc-orange3 {
+    background-color: $orange3;
+}
+.c-orange3 {
+    color: $orange3;
+}
+
 
 .bc-green{
     background-color: $green;
+}
+.c-green{
+    color: $green;
+}
+
+.bc-green2{
+    background-color: $green2;
+}
+.c-green2{
+    color: $green2;
 }
