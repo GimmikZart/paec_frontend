@@ -19,6 +19,13 @@
     flex-direction: column;
 }
 
+.flex-row{
+    flex-direction: row!important;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .align-end{
     align-items: end;
 }

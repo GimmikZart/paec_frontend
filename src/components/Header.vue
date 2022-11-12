@@ -24,7 +24,7 @@ export default {
   header{
     height: $headerHeight;
     width: 100%;
-    background-color: $blue;
+    background-color: $darkBlue;
     position: fixed;
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@ export default {
           margin-right: 1rem;
         }
         h5{
-          font-size: 20px;
+          font-size: 1.5rem;
           color: white;
         }
       }
@@ -51,7 +51,7 @@ export default {
         color: white;
         text-decoration: none;
         font-weight: bold;
-        font-size: 20px;
+        font-size:1.5rem;
         &#lavora-con-noi{
           background-color: $yellow;
           padding: 10px 20px;

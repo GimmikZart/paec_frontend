@@ -1,14 +1,27 @@
-$blue: #15255A;
+$darkBlue: #15255A;
 $lightBlue: #475FB7;
-$yellow: #FFC319;
+$darkBlue3: #0965B7; //BLU SBAGLIATO
+
+$yellow: #f2b829;
+
 $red: #F23132;
+
+$orange: #FF9D0A;
+$orange2: #FFC062;
+$orange3: #FFDAA4;
+
+$green: #34BE74;
 
 .bc-red {
     background-color: $red;
 }
 
-.bc-blue {
-    background-color: $blue;
+.bc-darkBlue {
+    background-color: $darkBlue;
+}
+
+.bc-blue3 {
+    background-color: $darkBlue3;
 }
 
 .bc-lightBlue {
@@ -16,4 +29,12 @@ $red: #F23132;
 }
 .bc-yellow {
     background-color: $yellow;
+}
+
+.bc-orange {
+    background-color: $orange;
+}
+
+.bc-green{
+    background-color: $green;
 }

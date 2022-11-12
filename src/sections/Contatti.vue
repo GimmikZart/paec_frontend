@@ -1,7 +1,14 @@
 <template>
-  <div id="contatti">
+  <section id="contatti">
+    <!-- MAP -->
+    <div id="map">
 
-  </div>
+    </div>
+    <!-- INFO -->
+    <div id="info">
+
+    </div>
+  </section>
 </template>
 
 <script>
@@ -10,6 +17,14 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  #contatti{
+    height: 50vh;
+    #map{
+      width: 50%;
+    }
+    #info{
+      width: 50%;
+    }
+  }
 </style>

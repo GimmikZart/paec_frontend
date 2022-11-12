@@ -1,10 +1,10 @@
 <template>
-  <div class="box-colorati" :class="`bc-${color}`">
+  <div class="box-colorati" :class="`bc-${boxInfo.color}`">
     <div id="circle">
-      <span>icona</span>
+      <img :src="getPhoto" alt="">
     </div>
     <div id="text" >
-      <p v-html="htmlText"></p>
+      <p v-html="boxInfo.htmlText"></p>
     </div>
   </div>
 </template>
@@ -12,7 +12,16 @@
 <script>
 export default {
   name: 'BoxColorati',
-  props: ["color", "htmlText"]
+  props: ["boxInfo"],
+  computed: {
+    getPhoto(){
+      return require('@/assets/immagini/chi_siamo/' + this.boxInfo.icon) 
+    }
+  },
+  created: function(){
+    console.log(this.boxInfo);
+  }
+  
 }
 </script>
 
@@ -22,17 +31,24 @@ export default {
   display: flex;
   align-items: center;
   height: calc(100% / 3);
+  min-height: 250px;
   width: 100%;
   #circle{
-    height: 80%;
+    height: auto;
     aspect-ratio : 1 / 1;
-    width: auto;
+    width: 70%;
     border: 2px solid white;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    img{
+      width: 50%;
+      height: auto;
+      fill: white;
+      stroke: white;
+    }
   }
   #text{
     height: 80%;
@@ -42,7 +58,7 @@ export default {
     justify-content: center;
     p {
       color: white;
-      font-size: 30px;
+      font-size: 1.5rem;
     }
   }
 }

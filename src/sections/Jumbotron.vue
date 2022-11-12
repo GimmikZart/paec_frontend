@@ -30,18 +30,20 @@ export default {
     #catchy{
       z-index: 2;
       img{
-        width: 200px;
+        width: 12rem;
         height: auto;
       }
       h1{
-        font-size: 80px;
+        font-size: 4rem;
         font-weight: bold;
         color: white;
+        text-align: center;
       }
       h3{
-        font-size: 40px;
+        font-size: 1.7rem;
         color: white;
         font-weight: 200;
+        text-align: center;
       }
       
 
@@ -51,13 +53,13 @@ export default {
         align-items: center;
         justify-content: center;
         h5{
-          font-size: 20px;
+          font-size: 1rem;
           color: white;
           font-weight: 200;
         }
         img{
-          width: 50px;
-          height: 50px;
+          width: 3rem;
+          height: 3rem;
         }
       }
     }
@@ -68,7 +70,7 @@ export default {
       left: 0;
       width: 100%; 
       height: 100%;
-      background-color: $blue;
+      background-color: $darkBlue;
       opacity: 50%;
     }
   }
