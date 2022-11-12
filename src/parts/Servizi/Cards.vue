@@ -46,7 +46,7 @@ export default {
     },
     info2: {
       icon: 'telemedicine.svg',
-      color: 'blue3',
+      color: 'blue',
       title: 'TELEMEDICINA DOMICILIARE',
       services: [
         "Assistenza a ore domiciliare",
