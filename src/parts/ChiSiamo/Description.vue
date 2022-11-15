@@ -1,11 +1,11 @@
 <template>
   <section id="description">
     <!-- LEFT -->
-    <div id="left" class="h-100 w-30">
+    <div id="left">
       <BoxColorati v-for="(box, index) in boxColorati" :key="index" :boxInfo="box"></BoxColorati>
     </div>
     <!-- RIGHT -->
-    <div id="right" class="h-100">
+    <div id="right">
       <div id="title">
         <h2>CHI SIAMO</h2>
         <h4>NOI RISOLVIAMO PROBLEMI</h4>
@@ -55,12 +55,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  //generic
   #description{
     display: flex;
     height: $viewPort;
     min-height: 750px;
+    #left{
+      height: 100%;
+      width: 30%;
+    }
     #right{
       width: 100%;
+      height: 100%;
       position: relative;
       #title{
         width: 100%;
@@ -106,6 +112,57 @@ export default {
             font-size: 1.5rem;
             
           }
+        }
+      }
+    }
+  }
+
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1200px) { 
+
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 992px) { 
+
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 768px) { 
+    #description{
+      flex-direction: column-reverse;
+      height: auto;
+      min-height: 0;
+      #left{
+        width: 100%;
+        display: flex;
+      }
+      #right{
+        #paragraph{
+          margin: 2rem auto;
+        }
+        #img{
+          height: 40vh;
+        }
+      }
+    }
+  }
+
+  // smartphones
+  @media (max-width: 576px) { 
+    #description{
+      #left{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      #right{
+        #paragraph{
+          width: 100%;
+          margin: 1rem auto;
+        }
+        #img{
+          height: 40vh;
         }
       }
     }

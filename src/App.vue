@@ -4,7 +4,7 @@
     <Jumbotron></Jumbotron>
     <ChiSiamo></ChiSiamo>
     <Servizi></Servizi>
-    <Contatti></Contatti>
+    <!-- <Contatti></Contatti> -->
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import Header from '@/components/Header.vue'
 import Jumbotron from '@/sections/Jumbotron.vue'
 import ChiSiamo from '@/sections/ChiSiamo.vue'
 import Servizi from '@/sections/Servizi.vue'
-import Contatti from '@/sections/Contatti.vue'
+//import Contatti from '@/sections/Contatti.vue'
 
 
 export default {
@@ -23,7 +23,7 @@ export default {
     Jumbotron,
     ChiSiamo,
     Servizi,
-    Contatti
+    //Contatti
   }
 }
 </script>

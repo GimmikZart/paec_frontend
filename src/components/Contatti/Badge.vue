@@ -24,29 +24,50 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+//generic
 #badge{
+  display: flex;
+  background-color: lightgrey;
+  padding: 2rem 0rem;
+  margin: 1rem 0;
+  p{
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  #left, #right{
     display: flex;
-    background-color: lightgrey;
-    padding: 2rem 0rem;
-    margin: 1rem 0;
-    p{
-      width: 50%;
-      text-align: center;
-      font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    img{
+      height: 5rem;
     }
-    #left, #right{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 25%;
-      img{
-        height: 5rem;
-      }
-      h6{
-        font-size: 1rem;
-        font-weight: bold;
-      }
+    h6{
+      font-size: 1rem;
+      font-weight: bold;
     }
   }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+}
+
+// smartphones
+@media (max-width: 575.98px) { 
+
+}
 </style>

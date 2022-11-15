@@ -106,33 +106,44 @@ export default {
 
 
 <style lang="scss" scoped>
-section{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  #map{
+
+  //generic
+  section{
     width: 100%;
     height: 100%;
-  }
-  .buttons{
-    width: 100%;
-    height: 10%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: none;
-    z-index: 2;
-    button{
-      width: calc(100% / 3);
+    position: relative;
+    #map{
+      width: 100%;
       height: 100%;
-      border: 1px solid rgba(0, 0, 0, 0.5);
-      background: rgba(255, 255, 255, 0.8);
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 1rem;
+    }
+    .buttons{
+      width: 100%;
+      height: 10%;
+      position: absolute;
+      display: flex;
+      justify-content: space-around;
+      bottom: 2rem;
+      left: 0;
+      background: none;
+      z-index: 2;
+      button{
+        width: calc(100% / 4);
+        height: 100%;
+        border-radius: 3rem;
+        border: none;
+        -webkit-box-shadow: inset 0px -5px 15px -5px #000000;
+        -moz-box-shadow: inset 0px -5px 15px -5px #000000;
+        -o-box-shadow: inset 0px -5px 15px -5px #000000;
+        box-shadow: inset 0px -5px 15px -5px #000000;
+        //border: 1px solid rgba(0, 0, 0, 0.5);
+        background: $darkBlue;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+      }
     }
   }
-}
   
   ::v-deep #customMarkerPlace{
     background-image: url('~@/assets/immagini/contatti/logo.jpg');
@@ -171,5 +182,26 @@ section{
     border: 2px solid black;
     width: 30px;
     height: 30px;
+  }
+
+  /* MEDIA QUERIES */
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) { 
+
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) { 
+
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) { 
+
+  }
+
+  // smartphones
+  @media (max-width: 575.98px) { 
+
   }
 </style>

@@ -26,6 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+//generic
 .box-colorati{
   padding: 2rem;
   display: flex;
@@ -59,6 +60,44 @@ export default {
     p {
       color: white;
       font-size: 1.5rem;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1200px) { 
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 992px) { 
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768px) { 
+  .box-colorati{
+    width: calc(100% / 3);
+    min-height: 0;
+    height: 150px;
+  }
+}
+
+// smartphones
+@media (max-width: 576px) { 
+  .box-colorati{
+    width: 100%;
+    min-height: 0;
+    height: 150px;
+    #circle{
+      height: 90%;
+      width: auto;
+    }
+    #text{
+      p {
+        color: white;
+        font-size: 2rem;
+      }
     }
   }
 }

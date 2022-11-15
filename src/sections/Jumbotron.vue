@@ -21,6 +21,8 @@ export default {
 </script>
 
 <style lang="scss">
+
+  //generic
   #jumbotron{
     height: 100vh;
     width: 100%;
@@ -29,6 +31,7 @@ export default {
     background-size: cover;
     #catchy{
       z-index: 2;
+      padding: 0 1rem;
       img{
         width: 12rem;
         height: auto;
@@ -73,5 +76,25 @@ export default {
       background-color: $darkBlue;
       opacity: 50%;
     }
+  }
+
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) { 
+
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) { 
+
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) { 
+
+  }
+
+  // smartphones
+  @media (max-width: 575.98px) { 
+
   }
 </style>

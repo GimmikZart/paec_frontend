@@ -26,6 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  //generic
   #target{
     width: 100%;
     position: relative;
@@ -101,6 +102,56 @@ export default {
           transform: translate(-1rem, 1rem);
         }
       } 
+    }
+  }
+
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) { 
+
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) { 
+    #target{
+      width: 90%;
+      margin: 2rem auto;
+      .layer{
+        height: 100px;
+      }
+    }
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) { 
+
+  }
+
+  // smartphones
+  @media (max-width: 575.98px) { 
+    #target{
+      width: 80%;
+      margin: 1rem auto;
+      .layer{
+        height: 100px;
+        width: 100%;
+        .circle{
+          height: 70%;
+        }
+        &.front{
+          .text{
+            h3{
+              font-size: 1.5rem;
+              color: $darkBlue;
+              font-weight: bold;
+            }
+            h4{
+              font-size: 1rem;
+              color: $darkBlue;
+              font-weight: 200;
+            }
+          }
+        }
+      }
     }
   }
 </style>

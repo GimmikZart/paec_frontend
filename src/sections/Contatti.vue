@@ -24,6 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  //generic
   #contatti{
     height: $viewPort;
     display: flex;
@@ -34,5 +35,25 @@ export default {
     #info{
       width: 50%;
     }
+  }
+
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) { 
+
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) { 
+
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) { 
+
+  }
+
+  // smartphones
+  @media (max-width: 575.98px) { 
+
   }
 </style>

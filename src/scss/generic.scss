@@ -11,6 +11,10 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+button{
+    background-color: unset;
+    border: none;
+}
 html{
     font-size: 16px;
 }
@@ -24,18 +28,18 @@ html{
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
     html{
-        font-size: 10px;
+        font-size: 11px;
     }
 }
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
     html{
-        font-size: 11px;
+        font-size: 10px;
     }
 }
 @media (max-width: 575.98px) { 
     html{
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
