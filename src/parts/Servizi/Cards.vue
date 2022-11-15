@@ -82,7 +82,6 @@ export default {
 <style lang="scss" scoped>
   //generic
   #cards{
-    //height: 100vh;
     #top{
       height: 50%;
       display: flex;
@@ -119,7 +118,23 @@ export default {
 
   // Small devices (landscape phones, less than 768px)
   @media (max-width: 767.98px) { 
-
+     #cards{
+        #top{
+          flex-direction: column;
+          #left{
+            width: 100%;
+            .card{
+              height: 400px;
+            }
+          }
+          #right{
+            width: 100%;
+            .card{
+              height: 250px;
+            }
+          }
+        }
+     }
   }
 
   // smartphones

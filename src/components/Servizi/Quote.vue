@@ -35,6 +35,7 @@ export default {
     width: 80%;
     margin: auto;
     font-size: 2rem;
+    font-style: italic;
     text-align: center;
     color: white;
     font-weight: 400;
@@ -53,11 +54,33 @@ export default {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
-
+  #quote{
+    img{
+      position: absolute;
+      top:-2rem;
+      left: -2rem;
+      width: 10%;
+    }
+  }
 }
 
 // smartphones
 @media (max-width: 575.98px) { 
-
+  #quote{
+    img{
+      position: absolute;
+      top:-2rem;
+      left: -2rem;
+      width: 12%;
+    }
+    p{
+      width: 90%;
+      margin: auto;
+      font-size: 2rem;
+      text-align: center;
+      color: white;
+      font-weight: 400;
+    }
+  }
 }
 </style>

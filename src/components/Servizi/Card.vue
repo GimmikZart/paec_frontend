@@ -118,7 +118,23 @@ export default {
 
   // Small devices (landscape phones, less than 768px)
   @media (max-width: 767.98px) { 
-
+    .card{
+      height: auto;
+    }
+    .card{
+      height: auto;
+      article{
+        .service-list{
+          .list{
+            flex-wrap: nowrap!important;
+            flex-direction: column!important;
+            .list-item{
+              width: 100%!important;
+            }
+          }
+        }
+      }
+    }
   }
 
   // smartphones
