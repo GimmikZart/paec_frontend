@@ -49,7 +49,18 @@ export default {
 
   // Small devices (landscape phones, less than 768px)
   @media (max-width: 767.98px) { 
-
+    #contatti{
+    padding-top: 2rem ;
+    flex-direction: column-reverse;
+    #map-container{
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      height: auto;
+    }
+    #info{
+      width: 100%;
+    }
+  }
   }
 
   // smartphones

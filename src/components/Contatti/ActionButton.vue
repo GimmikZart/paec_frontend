@@ -27,7 +27,7 @@ export default {
 //generic
 #action-button{
   width: 70%;
-  height: 80px;
+  //height: 80px;
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -74,7 +74,15 @@ export default {
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
-
+  #action-button{
+    #content{
+      font-size: 1.5rem;
+    }
+    small{
+      font-size: 1.3rem;
+      top: -0.8rem;
+    }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)

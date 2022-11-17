@@ -5,6 +5,8 @@
     <ChiSiamo></ChiSiamo>
     <Servizi></Servizi>
     <Contatti></Contatti>
+    <Footer></Footer>
+    <BannerAiuto></BannerAiuto>
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import Jumbotron from '@/sections/Jumbotron.vue'
 import ChiSiamo from '@/sections/ChiSiamo.vue'
 import Servizi from '@/sections/Servizi.vue'
 import Contatti from '@/sections/Contatti.vue'
+import Footer from '@/sections/Footer.vue'
+import BannerAiuto from '@/components/BannerAiuto.vue'
 
 
 export default {
@@ -23,7 +27,9 @@ export default {
     Jumbotron,
     ChiSiamo,
     Servizi,
-    Contatti
+    Contatti,
+    Footer,
+    BannerAiuto
   }
 }
 </script>

@@ -157,6 +157,7 @@ export default {
         flex-direction: column;
         justify-content: space-around;
         padding: 2rem;
+        padding-bottom: 50px;
         bottom: 0;
         right: 0;
         a{
