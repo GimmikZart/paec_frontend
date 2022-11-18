@@ -1,5 +1,5 @@
 <template>
-    <div id="nav-icon3" @click="toggleOpen" ref="hamburger">
+    <div id="nav-icon3" ref="hamburger">
         <span></span>
         <span></span>
         <span></span>
@@ -9,12 +9,18 @@
 
 <script>
 export default {
-  name: 'HamburgerMenu',
-  methods: {
-    toggleOpen(){
-        this.$refs.hamburger.classList.toggle('open');
+    name: 'HamburgerMenu',
+    props:['isOpen'],
+    watch: {
+        isOpen: function(){
+            this.toggleOpen()
+        }
+    },
+    methods: {
+        toggleOpen(){
+            this.$refs.hamburger.classList.toggle('open');
+        }
     }
-  }
 }
 </script>
 

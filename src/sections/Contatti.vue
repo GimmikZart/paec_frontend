@@ -33,6 +33,7 @@ export default {
       height: 100%;
     }
     #info{
+      padding-top: 1rem;
       width: 50%;
     }
   }

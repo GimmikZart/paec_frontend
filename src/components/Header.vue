@@ -6,10 +6,10 @@
         <h5>Professione <br> Assistenza <br> e Cura</h5>
       </div>
 
-      <a href="">CHI SIAMO</a>
-      <a href="">SERVIZI</a>
-      <a href="">CONTATTI</a>
-      <a href="" id="lavora-con-noi">LAVORA CON NOI</a>
+      <a @click="scrollToTargetAdjusted('chi-siamo')">CHI SIAMO</a>
+      <a @click="scrollToTargetAdjusted('servizi')">SERVIZI</a>
+      <a @click="scrollToTargetAdjusted('contatti')">CONTATTI</a>
+      <a @click="scrollToTargetAdjusted('chi-siamo')" id="lavora-con-noi">LAVORA CON NOI</a>
     </section>
 
     <section id="small-header">
@@ -18,13 +18,13 @@
         <h5>Professione <br> Assistenza <br> e Cura</h5>
       </div>
       <button @click="toggleMenu">
-        <HamburgerMenu></HamburgerMenu>
+        <HamburgerMenu :isOpen="menuOpen"></HamburgerMenu>
       </button>
       <div v-if="menuOpen" id="menuList">
-        <a href="">CHI SIAMO</a>
-        <a href="">SERVIZI</a>
-        <a href="">CONTATTI</a>
-        <a href="" id="lavora-con-noi">LAVORA CON NOI</a>
+        <a @click="scrollToTargetAdjusted('chi-siamo')">CHI SIAMO</a>
+        <a @click="scrollToTargetAdjusted('servizi')">SERVIZI</a>
+        <a @click="scrollToTargetAdjusted('contatti')">CONTATTI</a>
+        <a id="lavora-con-noi">LAVORA CON NOI</a>
       </div>
     </section>
   </header>
@@ -43,15 +43,27 @@ export default {
   computed: {
     breakPoint(){
       let windowWidth = window.innerWidth;
-      console.log({windowWidth});
       return windowWidth;
     }
   },
   methods: {
     toggleMenu(){
       this.menuOpen = !this.menuOpen
-      console.log("click");
-    }
+    },
+    scrollToTargetAdjusted(id){
+      this.menuOpen = false
+      var element = document.getElementById(id);
+      let header = document.getElementById('header').firstElementChild;
+      console.log({header});
+      var headerOffset = 60;
+      var elementPosition = element.getBoundingClientRect().top;
+      var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    
+      window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+      });
+    } 
   }
 }
 </script>
@@ -85,6 +97,7 @@ export default {
         }
 
         a{
+          cursor: pointer;
           color: white;
           text-decoration: none;
           font-weight: bold;
@@ -103,29 +116,11 @@ export default {
     text-align: center;
   }
 
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1200px) { 
-  header{
-    padding: 0 2rem;
-    #large-header{
-      .container{
-        display: flex;
-        justify-content: space-around;
-      }
-    }
-  }
-}
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 992px) { 
-
-}
-
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 768px) { 
   header{
     width: 100%;
+    padding: 0 1rem;
     #large-header{
       display: none;
     }
@@ -152,7 +147,7 @@ export default {
         position: fixed;
         width: 100%;
         background-color: $blue;
-        height: $viewPort;
+        height: calc(100% - 70px);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -160,6 +155,16 @@ export default {
         padding-bottom: 50px;
         bottom: 0;
         right: 0;
+        &::after{
+          content: '';
+          height: calc(100vh - 70px);
+          width: 100vw;
+          z-index:9;
+          position: fixed;
+          top:70px;
+          left:0;
+          background-color: $blue;
+        }
         a{
           font-size: 3rem;
           height: calc(80% / 3);
@@ -168,6 +173,7 @@ export default {
           padding: 2rem;
           color: white;
           font-weight: bold;
+          z-index: 10;
           border-bottom: 2px solid white;
           &#lavora-con-noi{
             background-color: $yellow;

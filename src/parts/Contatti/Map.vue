@@ -25,10 +25,8 @@ export default {
   },
   methods: {
     mapCreation(){
-      console.log('MAP');
       const tt = window.tt; 
       
-      console.log('TEST');
       var placeCoordinates = [ 10.323827215877811, 44.7833422487341 ];
       var parkingCoordinates = [10.325009918676923, 44.78270031005824];
       var bus1Coordinates = [10.32520075910985, 44.78367672759646];
@@ -79,13 +77,11 @@ export default {
       var markerPlace = new tt.Marker({element: customMarkerPlace}).setLngLat(placeCoordinates).addTo(map);
     },
     markersVisible(){
-      console.log('vis');
       this.zoom = 16.5
       this.markers = true
       this.mapCreation()
     },
     zoomOut(){
-      console.log('zoom');
       this.zoom = 12
       this.markers = false
       this.mapCreation()

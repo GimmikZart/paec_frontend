@@ -14,6 +14,7 @@ export default {
 <style lang="scss" scoped>
   #banner-aiuto{
     display: none;
+    box-shadow: 10px 10px 10px 10px black;
     width: 100vw;
     max-height: 50px;
     background-color: $red;

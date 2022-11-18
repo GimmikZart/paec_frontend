@@ -42,7 +42,7 @@ export default {
         z-index: -1;
         width: 100%;
         height: auto;
-        opacity: 50%;
+        opacity: 0.5;
         path{
           fill: $yellow;
         }
