@@ -14,7 +14,7 @@ export default {
   props: ['buttonData'],
   computed: {
     getIcon(){
-      return require('@/assets/immagini/chi_siamo/' + this.buttonData.icon) 
+      return require('@/assets/immagini/contatti/' + this.buttonData.icon) 
     }
   },
   created(){

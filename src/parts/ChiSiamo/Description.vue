@@ -8,7 +8,6 @@
     <div id="right">
       <div id="title">
         <h2>CHI SIAMO</h2>
-        <h4>NOI RISOLVIAMO PROBLEMI</h4>
       </div>
       <div id="img"></div>
       <div id="paragraph">
@@ -73,16 +72,13 @@ export default {
         height: 15%;
         background-color: $darkBlue;
         padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         h2{
           text-align: center;
           font-size: 3rem;
           font-weight: bold;
-          color: white;
-        }
-        h4{
-          text-align: center;
-          font-size: 1.5rem;
-          font-weight: 200;
           color: white;
         }
       }

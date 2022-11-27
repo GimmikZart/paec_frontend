@@ -42,15 +42,6 @@ export default {
           'Front desk',
           'Pubbliche relazioni'
         ]
-      },
-      {
-        name: 'Sebastiano Paterlini',
-        photo: 'photo.png',
-        roles: [
-          'Pubbliche relazioni',
-          'Responsabile web',
-          'Comunicazione'
-        ]
       }
     ]
   }),

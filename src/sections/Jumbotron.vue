@@ -6,7 +6,7 @@
         <h1>PROFESSIONE ASSISTENZA E CURA</h1>
         <h3>IL TUO AIUTO IMMEDIATO NEL MOMENTO DEL REALE BISOGNO</h3>
       </div>
-      <div id="action">
+      <div id="action" @click="scrollToTargetAdjusted('chi-siamo')">
         <h5>SCOPRI CHI SIAMO E I NOSTRI SERVIZI</h5>
         <img src="@/assets/immagini/jumbotron/arrow_down.svg" alt="">
       </div>
@@ -17,6 +17,22 @@
 <script>
 export default {
   name: 'Jumbotron',
+  methods: {
+    scrollToTargetAdjusted(id){
+      this.menuOpen = false
+      var element = document.getElementById(id);
+      let header = document.getElementById('header').firstElementChild;
+      console.log({header});
+      var headerOffset = 60;
+      var elementPosition = element.getBoundingClientRect().top;
+      var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    
+      window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+      });
+    } 
+  }
 }
 </script>
 
@@ -29,6 +45,7 @@ export default {
     background-image: url("~@/assets/immagini/jumbotron/jumbotron.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     #catchy{
       z-index: 2;
       padding: 0 1rem;
@@ -51,6 +68,7 @@ export default {
       
 
       #action{
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -72,7 +90,7 @@ export default {
       top: 0; 
       left: 0;
       width: 100%; 
-      height: 100%;
+      height: 100vh;
       background-color: $darkBlue;
       opacity: 0.5;
     }

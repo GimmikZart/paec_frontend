@@ -86,7 +86,7 @@ export default {
           padding: 1rem;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
+          justify-content: flex-start;
           .list-item{
             list-style: none;
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);

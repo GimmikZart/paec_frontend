@@ -29,15 +29,15 @@ export default {
         subTitle:'(tra cui: “progetto fine vita”, per le cure palliative domiciliari)'
       },
       {
-        title: 'SPORTELLO DI ORIENTAMENTO PER ANZIANI',
+        title: 'SISTEMARE E ORIENTARE LE PERSONE ANZIANE',
         subTitle: '(gestione assistenza badanti, ricerca di disponibilità nellestrutture per anziani, cooperazione con sale di commiato)'
       },
       {
-        title: 'APPLICAZIONE E DIFFUSIONE DELLA TELEMEDICINA',
+        title: 'APPLICARE E DIFFONDERE LA TELEMEDICINA',
         subTitle: '(con il sostegno di aziende specializzate)'
       },
       {
-        title: 'SERVIZIO INFERMIERISTICO ORDINARIO E DI URGENZA DIURNO E NOTTURNO',
+        title: 'FORNIRE SERVIZI INFERMIERISTICI H24',
         subTitle: null
       }
     ]

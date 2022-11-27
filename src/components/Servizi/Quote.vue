@@ -2,8 +2,8 @@
   <div id="quote">
     <img src="@/assets/immagini/servizi/quote.svg" alt="">
     <p>
-      Professione Assistenza e Cura garantisce serietà, 
-      affidabilità, alta reperibilità e calore: il quid in più senza il quale 
+      Professione Assistenza e Cura garantisce competenza, 
+      serietà, affidabilità, alta reperibilità e calore: il quid in più senza il quale 
       non potrebbero prendersi cura dei nostri affetti.
     </p>
   </div>

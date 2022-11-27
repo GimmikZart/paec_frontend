@@ -26,11 +26,12 @@ export default {
 <style lang="scss" scoped>
   //generic
   #contatti{
-    height: $viewPort;
+    height: auto;
     display: flex;
     #map-container{
       width: 50%;
-      height: 100%;
+      height: auto;
+      min-height: 100px;
     }
     #info{
       padding-top: 1rem;

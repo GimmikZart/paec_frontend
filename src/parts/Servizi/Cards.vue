@@ -32,6 +32,7 @@ export default {
       color: 'red',
       title: 'PRESTAZIONI INFERMIERISTICHE DOMICILIARI',
       services: [
+        "Prelievi ematici domiciliari",
         "Terapie endovenose, fleboclisi / ipodermoclisi",
         "Iniezioni intramuscolari e sottocutanee",
         "Cateterismi vescicali / lavaggi vescicali",
@@ -41,7 +42,8 @@ export default {
         "Misurazione parametri vitali (PA, FC, SpO2)",
         "Tamponi Covid 19",
         "Terapie palliative",
-        "Reperibilità notturna"
+        "Reperibilità notturna",
+        "Ritiro referti"
       ]
     },
     info2: {
@@ -65,12 +67,11 @@ export default {
     info4: {
       icon: 'mediaction.svg',
       color: 'green',
-      title: 'FARMACI',
+      title: 'SERVIZIO FARMACI',
       services: [
-        "Richiediamo noi i farmaci al tuo medico per tempo",
-        "Ritiro prioritario in farmacia",
-        "Te li portiamo direttamente a casa",
-        "Preparazione della terapia settimanale"
+        "Richiediamo tempestivamente i tuoi farmaci al medico curante prima dell'esaurimento",
+        "Consegna a domicilio o ritiro prioritario in farmacia (evita la coda)",
+        "Preparazione terapie settimanali"
       ]
     }
 

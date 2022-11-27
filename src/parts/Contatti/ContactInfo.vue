@@ -20,7 +20,7 @@ export default {
       {
         color1: 'green2',
         color2: 'green',
-        icon: 'night.svg',
+        icon: 'telephone.svg',
         title: 'Numero di telefono',
         content: '0521 839583',
         href: 'tel:0521839583'
@@ -28,7 +28,7 @@ export default {
       {
         color1: 'yellow3',
         color2: 'yellow2',
-        icon: 'night.svg',
+        icon: 'whatsapp.svg',
         title: 'Numero di cellulare',
         content: '346 0274928',
         href: 'https://wa.me/3460274928'
@@ -36,7 +36,7 @@ export default {
       {
         color1: 'blue3',
         color2: 'blue2',
-        icon: 'night.svg',
+        icon: 'location.svg',
         title: 'Indirizzo',
         content: 'Via Ognibene 2, PR',
         href: 'https://goo.gl/maps/fQpRjwGZZoQPDG23A'
@@ -44,7 +44,7 @@ export default {
       {
         color1: 'red3',
         color2: 'red2',
-        icon: 'night.svg',
+        icon: 'email.svg',
         title: 'Email',
         content: 'assistenza@email.com',
         href: 'mailto:assistenza@email.com'

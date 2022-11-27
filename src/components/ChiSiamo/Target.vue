@@ -6,7 +6,7 @@
       </div>
       <div class="text" :class="{'reverse': isEven}">
         <h3>{{target.title}}</h3>
-        <h4 v-if="target.subTitle">{{target.subTitle}}</h4>
+        <!-- <h4 v-if="target.subTitle">{{target.subTitle}}</h4> -->
       </div>
     </div>
     <div class="layer back" :class="{'reverse': isEven}"></div>

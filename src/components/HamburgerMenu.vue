@@ -29,10 +29,10 @@ export default {
         width: 50px;
         height: 40px;
         position: relative;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg) scale(0.7);
+        -moz-transform: rotate(0deg) scale(0.7);
+        -o-transform: rotate(0deg) scale(0.7);
+        transform: rotate(0deg) scale(0.7);
         -webkit-transition: .5s ease-in-out;
         -moz-transition: .5s ease-in-out;
         -o-transition: .5s ease-in-out;

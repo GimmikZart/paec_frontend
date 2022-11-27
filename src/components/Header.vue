@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <section id="large-header" class="container ma-auto d-flex align-center justify-space-between">
-      <div id="logo">
+      <div @click="scrollToTargetAdjusted('jumbotron')" id="logo">
         <img src="@/assets/immagini/logo/logo.png" alt="">
         <h5>Professione <br> Assistenza <br> e Cura</h5>
       </div>
@@ -13,7 +13,7 @@
     </section>
 
     <section id="small-header">
-      <div id="logo">
+      <div id="logo" @click="scrollToTargetAdjusted('jumbotron')">
         <img src="@/assets/immagini/logo/logo.png" alt="">
         <h5>Professione <br> Assistenza <br> e Cura</h5>
       </div>
@@ -85,6 +85,7 @@ export default {
         #logo {
           height: 100%;
           display: flex;
+          cursor: pointer;
           align-items: center;
           img{
             height: 100%;
@@ -130,6 +131,7 @@ export default {
       align-items: center;
       height: 100%;
       width: 100%;
+      z-index:10;
       #logo{
         display: flex;
         align-items: center;
@@ -147,6 +149,9 @@ export default {
         position: fixed;
         width: 100%;
         background-color: $blue;
+        position: fixed;
+        top:70px;
+        left:0;
         height: calc(100% - 70px);
         display: flex;
         flex-direction: column;
@@ -155,16 +160,15 @@ export default {
         padding-bottom: 50px;
         bottom: 0;
         right: 0;
-        &::after{
+        z-index: 9;
+        /* &::after{
           content: '';
           height: calc(100vh - 70px);
           width: 100vw;
           z-index:9;
-          position: fixed;
-          top:70px;
-          left:0;
+          
           background-color: $blue;
-        }
+        } */
         a{
           font-size: 3rem;
           height: calc(80% / 3);

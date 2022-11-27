@@ -136,7 +136,7 @@ export default {
         color: white;
         cursor: pointer;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 0.75rem;
       }
     }
   }
