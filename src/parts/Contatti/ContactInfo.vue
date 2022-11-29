@@ -22,16 +22,16 @@ export default {
         color2: 'green',
         icon: 'telephone.svg',
         title: 'Numero di telefono',
-        content: '0521 839583',
-        href: 'tel:0521839583'
+        content: '0521 576875',
+        href: 'tel:0521576875'
       },
       {
         color1: 'yellow3',
         color2: 'yellow2',
         icon: 'whatsapp.svg',
         title: 'Numero di cellulare',
-        content: '346 0274928',
-        href: 'https://wa.me/3460274928'
+        content: '324 9557683',
+        href: 'https://wa.me/3249557683'
       },
       {
         color1: 'blue3',
@@ -46,8 +46,8 @@ export default {
         color2: 'red2',
         icon: 'email.svg',
         title: 'Email',
-        content: 'assistenza@email.com',
-        href: 'mailto:assistenza@email.com'
+        content: 'info@pacparma.it',
+        href: 'mailto:info@pacparma.it'
       }
     ]
   }),

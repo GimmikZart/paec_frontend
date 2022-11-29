@@ -9,7 +9,7 @@
       <a @click="scrollToTargetAdjusted('chi-siamo')">CHI SIAMO</a>
       <a @click="scrollToTargetAdjusted('servizi')">SERVIZI</a>
       <a @click="scrollToTargetAdjusted('contatti')">CONTATTI</a>
-      <a @click="scrollToTargetAdjusted('chi-siamo')" id="lavora-con-noi">LAVORA CON NOI</a>
+      <a href="mailto:info@pacparma.it" id="lavora-con-noi">LAVORA CON NOI</a>
     </section>
 
     <section id="small-header">
@@ -24,7 +24,7 @@
         <a @click="scrollToTargetAdjusted('chi-siamo')">CHI SIAMO</a>
         <a @click="scrollToTargetAdjusted('servizi')">SERVIZI</a>
         <a @click="scrollToTargetAdjusted('contatti')">CONTATTI</a>
-        <a id="lavora-con-noi">LAVORA CON NOI</a>
+        <a href="mailto:info@pacparma.it" id="lavora-con-noi">LAVORA CON NOI</a>
       </div>
     </section>
   </header>
@@ -73,7 +73,7 @@ export default {
   header{
     height: $headerHeight;
     width: 100%;
-    background-color: $darkBlue;
+    background-color: $header;
     position: fixed;
     display: flex;
     align-items: center;

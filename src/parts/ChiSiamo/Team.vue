@@ -18,8 +18,8 @@ export default {
   data: () => ({
     teamMember: [
       {
-        name: 'Pierluigi Piazza',
-        photo: 'photo.png',
+        name: 'Pierluigi P.',
+        photo: 'pierluigi.png',
         roles: [
           'Responsabile amministrativo',
           'Coordinatore badanti/operatrici di aiuto domiciliari',
@@ -27,16 +27,16 @@ export default {
         ]
       },
       {
-        name: 'Davide Dacci',
-        photo: 'photo.png',
+        name: 'Davide D.',
+        photo: 'davide.png',
         roles: [
           'Coordinatore infermieristico',
           'Infermiere libero professionista'
         ]
       },
       {
-        name: 'Barbara Montanini',
-        photo: 'photo.png',
+        name: 'Barbara M.',
+        photo: 'barbara.png',
         roles: [
           'Organizzazione dei servizi',
           'Front desk',

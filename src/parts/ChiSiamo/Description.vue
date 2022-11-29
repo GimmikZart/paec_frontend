@@ -35,17 +35,17 @@ export default {
       {
         color: 'red',
         icon: 'emergency.svg',
-        htmlText: 'Gestione <br> <b>Urgenze</b> <br> 24 ore su 24'
+        htmlText: '<b>Urgenze</b> <br> infermieristiche <br> 24 ore su 24'
       },
       {
         color: 'lightBlue',
         icon: 'night.svg',
-        htmlText: 'Reperibilità <br> <b>Notturne</b> <br> e festivi'
+        htmlText: '<b>Telemedicina</b> <br> domiciliare'
       },
       {
         color: 'yellow',
         icon: 'professione-in-famiglia.png',
-        htmlText: 'Membri di <br> <b>“Professione </b> <br> <b>in Famiglia”</b>'
+        htmlText: '<b>Badanti</b> <br> e assistenza <br> alla persona '
       }
     ]
   }),
@@ -70,7 +70,7 @@ export default {
       #title{
         width: 100%;
         height: 15%;
-        background-color: $darkBlue;
+        background-color: $header;
         padding: 0.5rem;
         display: flex;
         align-items: center;

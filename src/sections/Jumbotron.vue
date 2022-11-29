@@ -92,7 +92,7 @@ export default {
       width: 100%; 
       height: 100vh;
       background-color: $darkBlue;
-      opacity: 0.5;
+      opacity: 0.3;
     }
   }
 

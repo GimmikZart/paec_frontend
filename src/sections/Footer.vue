@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    FOOTER
+    
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   #footer{
     width: 100%;
     border: none;
-    height: 200px;
+    height: 100px;
     background-color: $darkBlue;
     font-size: 5rem;
     color: white;

@@ -33,9 +33,9 @@ export default {
       title: 'PRESTAZIONI INFERMIERISTICHE DOMICILIARI',
       services: [
         "Prelievi ematici domiciliari",
-        "Terapie endovenose, fleboclisi / ipodermoclisi",
+        "Terapie endovenose, fleboclisi e ipodermoclisi",
         "Iniezioni intramuscolari e sottocutanee",
-        "Cateterismi vescicali / lavaggi vescicali",
+        "Cateterismi vescicali e lavaggi vescicali",
         "Clisteri evacuanti ",
         "Medicazioni semplici e complesse",
         "Gestione piaghe da decubito",

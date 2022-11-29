@@ -48,9 +48,9 @@ export default {
         }
       }
       .photo{
-        width: 80%;
+        width: auto;
         z-index: 2;
-        height: auto;
+        height: 200px;
         margin: auto;
       }
     }
