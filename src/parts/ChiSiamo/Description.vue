@@ -34,17 +34,17 @@ export default {
     boxColorati: [
       {
         color: 'red',
-        icon: 'emergency.svg',
+        icon: 'infermieristica.png',
         htmlText: '<b>Urgenze</b> <br> infermieristiche <br> 24 ore su 24'
       },
       {
         color: 'lightBlue',
-        icon: 'night.svg',
+        icon: 'telemedicina.png',
         htmlText: '<b>Telemedicina</b> <br> domiciliare'
       },
       {
         color: 'yellow',
-        icon: 'professione-in-famiglia.png',
+        icon: 'badanti.png',
         htmlText: '<b>Badanti</b> <br> e assistenza <br> alla persona '
       }
     ]
@@ -69,7 +69,7 @@ export default {
       position: relative;
       #title{
         width: 100%;
-        height: 15%;
+        height: 10%;
         background-color: $header;
         padding: 0.5rem;
         display: flex;
@@ -84,10 +84,12 @@ export default {
       }
       #img{
         width: 100%;
-        height: 40%;
-        background-image: url("~@/assets/immagini/chi_siamo/team.jpeg");
-        background-repeat: no-repeat;
+        height: 45%;
+        background-image: url("~@/assets/immagini/chi_siamo/mani.jpg");
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        //background-size: cover;
       }
       #paragraph{
         width: 80%;
@@ -114,8 +116,33 @@ export default {
   }
 
   // Large devices (desktops, less than 1200px)
-  @media (max-width: 1200px) { 
+  @media (max-width: 1500px) { 
+    #description{
+      #right{
+        #paragraph{
+          div{
+            p{
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
 
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1200px) { 
+    #description{
+      #right{
+        #paragraph{
+          div{
+            p{
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
   }
 
   // Medium devices (tablets, less than 992px)

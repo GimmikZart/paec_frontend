@@ -1,6 +1,6 @@
 <template>
   <div id="target">
-    <div class="layer front" :class="{'reverse': isEven}">
+    <div class="layer front animate__animated animate__fadeInLeft" :class="{'reverse animate__fadeInRight': isEven}">
       <div class="circle" :class="{'reverse': isEven}">
         <span>{{index}}</span>
       </div>
@@ -46,7 +46,7 @@ export default {
         aspect-ratio: 1 / 1;
         border-radius: 100%;
         border: 5px solid white;
-        background-color: $orange2;
+        background-color: $yellow;
         transform: translate(-70% , 0%);
         &.reverse{
           right: 0;
@@ -96,7 +96,7 @@ export default {
       &.back{
         position: absolute;
         z-index: -1;
-        background-color: $orange;
+        background-color:  $yellow;
         transform: translate(1rem, 1rem);
         &.reverse{
           transform: translate(-1rem, 1rem);

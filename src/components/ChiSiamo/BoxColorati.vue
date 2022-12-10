@@ -45,7 +45,7 @@ export default {
     justify-content: center;
     color: white;
     img{
-      width: 50%;
+      width: 70%;
       height: auto;
       fill: white;
       stroke: white;

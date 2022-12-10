@@ -18,7 +18,7 @@ export default {
   data: () => ({
     teamMember: [
       {
-        name: 'Pierluigi P.',
+        name: 'Pierluigi',
         photo: 'pierluigi.png',
         roles: [
           'Responsabile amministrativo',
@@ -27,7 +27,7 @@ export default {
         ]
       },
       {
-        name: 'Davide D.',
+        name: 'Davide',
         photo: 'davide.png',
         roles: [
           'Coordinatore infermieristico',
@@ -35,7 +35,7 @@ export default {
         ]
       },
       {
-        name: 'Barbara M.',
+        name: 'Barbara',
         photo: 'barbara.png',
         roles: [
           'Organizzazione dei servizi',

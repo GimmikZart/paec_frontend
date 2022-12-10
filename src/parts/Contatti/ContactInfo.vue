@@ -31,7 +31,7 @@ export default {
         icon: 'whatsapp.svg',
         title: 'Numero di cellulare',
         content: '324 9557683',
-        href: 'https://wa.me/3249557683'
+        href: 'https://wa.me/+393249557683'
       },
       {
         color1: 'blue3',

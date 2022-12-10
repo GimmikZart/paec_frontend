@@ -1,7 +1,7 @@
 <template>
   <div id="banner-aiuto">
     <h2>HAI BISOGNO DI AIUTO URGENTE?</h2>
-    <a href="tel:0521839583">CHIAMA SUBITO</a>
+    <a href="tel:+393249557683">CHIAMA SUBITO</a>
   </div>
 </template>
 
