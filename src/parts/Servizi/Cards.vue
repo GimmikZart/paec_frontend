@@ -51,8 +51,8 @@ export default {
       color: 'blue',
       title: 'TELEMEDICINA DOMICILIARE',
       services: [
-        "Assistenza a ore domiciliare",
-        "Assistenza h24 in convivenza domiciliare"
+        "Elettrocardiogrammi con referto medico entro 2 ore",
+        "Holter cardiaci delle 24 o 48 ore con referto medico entro 2 giorni"
       ]
     },
     info3: {
@@ -60,8 +60,8 @@ export default {
       color: 'yellow',
       title: 'BADANTI / OPERATRICI DI AIUTO / ASSISTENTI FAMILIARI',
       services: [
-        "Elettrocardiogrammi con referto medico entro 2 ore",
-        "Holter cardiaci delle 24 o 48 ore con referto medico entro 2 giorni"
+        "Assistenza a ore domiciliare",
+        "Assistenza h24 in convivenza domiciliare"
       ]
     },
     info4: {
