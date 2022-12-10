@@ -85,7 +85,7 @@ export default {
       #img{
         width: 100%;
         height: 45%;
-        background-image: url("~@/assets/immagini/chi_siamo/mani.jpg");
+        background-image: url("~@/assets/immagini/chi_siamo/team.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
